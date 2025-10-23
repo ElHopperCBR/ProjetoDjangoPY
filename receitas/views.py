@@ -3,7 +3,9 @@ from django.http import HttpResponse
 
 # Create your views here.
 def home(request):
-    return render (request, 'home.html')
+    return render (request, 'home.html', context={
+        'nome': 'Receitas Django'
+    })
 
 def sobre(request):
     return HttpResponse("sobre url")
