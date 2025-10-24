@@ -6,9 +6,3 @@ def home(request):
     return render (request, 'home.html', context={
         'nome': 'Receitas Django'
     })
-
-def sobre(request):
-    return HttpResponse("sobre url")
-
-def contato(request):
-    return HttpResponse("contato url")
