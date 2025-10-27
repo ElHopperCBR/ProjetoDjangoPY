@@ -24,6 +24,7 @@
 
     <style>
         * {
+            /*Padding é uma propriedade CSS que cria espaço interno dentro de um elemento — ou seja, distância entre o conteúdo (texto/imagem) e a borda do elemento.*/
             padding: 0;
             margin: 0;
             box-sizing: border-box;
@@ -37,7 +38,8 @@
 
             font-size: 1.6rem;
             /* 1.6 rem vale 16 pixels */
-            font-family: sans-serif
+            font-family: sans-serif;
+            background: rgb(228, 228, 228);
         }
 
         h1,
@@ -77,6 +79,46 @@
         .main-logo-icon {
             margin-right: 2rem;
 
+        }
+
+        .search-form {
+            border: 0.5rem solid #ccc;
+            max-width: 50rem;
+            margin: 0 auto;
+            border-radius: 1rem;
+            position: relative;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .search-input,
+        .search-button {
+            border: none;
+            background: none;
+            outline: none;
+            padding: 1rem;
+        }
+
+        .search-input {
+            width: 100%;
+            font-size: 1.6rem;
+            padding-right: 4rem;
+        }
+
+        .search-button {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .search-button:focus {
+            outline: 1px solid #13141f;
+            background: rgba(0, 0, 0, 0.05);
+        }
+
+        .search-form:focus-within,
+        .search-button {
+            border-color: #13141f;
+            background-color: white;
         }
     </style>
 </head>
