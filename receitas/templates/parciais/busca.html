@@ -1,0 +1,19 @@
+<!-- Container para a área de busca; a classe 'container' normalmente centraliza/limita largura -->
+<div class="search-container container">
+    <!-- Formulário de busca:
+        - action="/" envia a requisição para a rota raiz
+        - method="get" usa query string (ex: /?q=termo)
+        - name="search" nome do formulário (pouco usado, mas disponível) -->
+    <form class="search-form" action="/" name="search" method="get">
+        <!-- Campo de texto para o termo de busca:
+            - name="q" é o nome do parâmetro que será enviado (ex: ?q=bolo)
+            - placeholder mostra texto guia quando vazio -->
+        <input class="search-input" type="text" name="q" placeholder="Buscar receitas...">
+        <!-- Botão de submissão:
+                - type="submit" envia o formulário ao ser clicado -->
+        <button class="search-button" type="submit">
+            <!-- Ícone de lupa (Font Awesome). Requer que o Font Awesome esteja incluído no <head> -->
+            <i class="fas fa-search"></i>
+        </button>
+    </form>
+</div>
