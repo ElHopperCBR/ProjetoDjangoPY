@@ -40,6 +40,7 @@
             /* 1.6 rem vale 16 pixels */
             font-family: sans-serif;
             background: rgb(228, 228, 228);
+            color: #333;
         }
 
         h1,
@@ -157,8 +158,22 @@
         }
 
         .receitas-list-item:hover {
+            transform: scale(1.05);
             box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.3);
-            transform: scale(1.1);
+        }
+
+        .receitas-titulo {
+            font-size: 2.4rem;
+            margin: 1.6rem;
+        }
+
+        .receitas-autor {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.6rem;
+            margin: 0 1.6rem 1.6rem 1.6rem;
+            font-size: 1.4rem;
+            color: #555;
         }
     </style>
 </head>
